@@ -15,11 +15,17 @@
   .button:active{
     box-shadow: none;
   }
-  .body{
-  background-color:green;
-  }
-  @media (max-width:600px) {
+    /* .body{
+    background-color:green;
+    } */
+  @media (max-width:800px) {
     .body{
       width: 100%;
+    }
+    .number{
+      width: 100vw;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto auto auto;
     }
   }

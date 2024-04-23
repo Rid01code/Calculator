@@ -27,7 +27,7 @@ const Number = ({calButtonHandler}) => {
 
 
   return (
-    <div className='pt-6'>{numbers.map((number , index) => (<button key={index} className={styles.button} onClick={()=>{calButtonHandler(number)}}>{number}</button>))}</div>
+    <div className={`${styles.number} pt-6`}>{numbers.map((number , index) => (<button key={index} className={styles.button} onClick={()=>{calButtonHandler(number)}}>{number}</button>))}</div>
   )
 }
 

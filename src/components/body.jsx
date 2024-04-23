@@ -22,7 +22,7 @@ const Body = () => {
   }
 
   return (
-    <div className={`${styles.body}w-96 h-full bg-gray-300 border-solid border-4 border-black rounded-xl flex flex-col items-center justify-around`}>
+    <div className={`${styles.body} w-96 h-full bg-gray-300 border-solid border-4 border-black rounded-xl flex flex-col items-center justify-around`}>
       <Display calVal={calVal} />
       <Number calButtonHandler={ calButtonHandler } />
     </div>
