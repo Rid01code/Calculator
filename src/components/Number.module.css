@@ -1,0 +1,25 @@
+.button{
+  border-radius: 10px;
+  background: #d1d5db;
+  box-shadow:  5px -5px 8px #b1b5ba,
+              -5px 5px 8px #f0f5fc;
+  width: 70px;
+  height: 90px;
+  margin: 6px;
+  font-size: x-large;
+  }
+  .button:hover{
+    box-shadow:  5px 5px 8px #b1b5ba,
+              -5px -5px 8px #f0f5fc;
+  }
+  .button:active{
+    box-shadow: none;
+  }
+  .body{
+  background-color:green;
+  }
+  @media (max-width:600px) {
+    .body{
+      width: 100%;
+    }
+  }
