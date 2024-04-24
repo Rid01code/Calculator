@@ -9,18 +9,21 @@ const Body = () => {
 
   let calButtonHandler = (number) => {
     if (number === "c") {
-      calVal=""
+      setCalVal('');
     }
     else if (number === "=") {
       const result = eval(calVal)
       setCalVal(result)
+    }
+    else if (number === "←") {
+      setCalVal(calVal.slice(0, -1))
     }
     else {
       const display = calVal + number
       setCalVal(display)
     }
   }
-
+console.log(calVal)
   return (
     <div className={`${styles.body} w-96 h-full bg-gray-300 border-solid border-4 border-black rounded-xl flex flex-col items-center justify-around`}>
       <Display calVal={calVal} />
